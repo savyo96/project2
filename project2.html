@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>submit survey</title>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<meta name="author" content="savyo.96">
+<meta name="description" content="survey page">
+<style>
+div {
+    color: crimson;
+    margin-bottom: 20px;
+}
+body { background-color: linen;
+
+}
+h3{
+    background-color: dodgerblue;
+    color: green
+}
+
+
+</style>
+</head>
+<body>
+  
+   
+    <div>
+    <form action="/surveys/submitSurvey.html" method="POST">
+    <input type="hidden" name="csrf_token" value="545jk5fd_42">
+   <div><label for="f-name" >first Name</label>
+    <input  type="text" id="f-name" name="f-name" placeholder="your first name" required ></div><br>
+  <div> <label for="l-name">last Name</label>
+    <input type="text" id="l-name" name="l-name" placeholder="your last name" required></div>
+    <br>
+
+       <div><label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="your email" required></div><br>
+       <div><label for="age">your age</label>
+        <select name="age-range" id="age">
+         <option value="age">18</option>
+         <option value="age">18-25</option>
+         <option value="age">25</option>
+        </select></div>
+    <legend><label for="project-description"><h3>the project-description</h3></label>
+    <textarea name="project-description" id="description" cols="30" rows="10"  placeholder="your description project that did it before"> </textarea><br>
+    <label> <h3>Project-screenshot</h3></label>
+    <input type="file" multiple name="project-screenshot" accept="image/*">
+    <div>
+        <legend>
+     <label><h3>is the project done</h3></label> 
+     <input type="radio" name="project_done" value="yes">Yes<br>
+     <input type="radio" name="project_done" value="no">No
+    </div><br>
+    
+    
+    
+    
+    
+    
+    
+    
+    </form></div>
+</body>
+</html>
